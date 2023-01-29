@@ -2,6 +2,8 @@
 //и выдает, является ли число четным 
 //(делится ли оно на два без остатка).
 
+Console.Clear();
+
 Console.Write("Введите число: ");
 int num = int.Parse(Console.ReadLine()!);
 
