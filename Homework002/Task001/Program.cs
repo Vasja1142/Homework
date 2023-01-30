@@ -6,6 +6,8 @@ Console.Clear();
 Console.Write("Введите трехзначное число: ");
 int num = int.Parse(Console.ReadLine()!);
 
+//num = Math.Abs(num); возможное решение
+
 if (num / 100 > 0 && num / 100 < 10)
 {
     int hundreds = num / 100;
