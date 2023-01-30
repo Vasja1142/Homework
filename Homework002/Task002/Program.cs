@@ -5,19 +5,23 @@ Console.Clear();
 
 Console.Write("Введите число: ");
 int num = int.Parse(Console.ReadLine()!);
+//num = -36759
 
-int x = 100;
+num = Math.Abs(num);
+//num = 36759
 
-if (num / 100 > 0)
+int x = 10;
+
+if (num / 100 > 0) //true
 {
-    while (num / x > 10)
+    while (num / x > 100) //true
     {
        x = x * 10; 
     }
-    
-    x = x / 10;
-    int y = num % x;
-    int result = y / (x / 10);
+    //x = 100
+
+    int y = num % x; //y = 759
+    int result = y / (x / 10);  //resust = 7
     Console.Write(result);
 }
 else
