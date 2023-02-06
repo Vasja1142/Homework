@@ -2,7 +2,7 @@
 
 Console.Clear();
 
-Console.Write("Введите любое число: ");
+Console.Write("Введите любое положительное число кроме 0: ");
 int num = int.Parse(Console.ReadLine()!);
 if (num > 0)
 {
@@ -16,5 +16,5 @@ if (num > 0)
 }
 else
 {
-    Console.Write("Я не умею работать с отрицательными числами");
+    Console.Write("Пожалуйста, введите число больше 0");
 }
